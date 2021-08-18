@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="assets/css/button.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/index.js"></script>
@@ -19,16 +20,16 @@
         <div class="container">
             <div class="header-main">
                 <div class="header-menu">
-                    <button class="shop btn-reset"aria-label="shop">
+                    <button class="shop btn-reset transition"aria-label="shop">
                         shop
                     </button>
-                    <button class="about btn-reset"aria-label="about">
+                    <button class="about btn-reset transition"aria-label="about">
                         about
                     </button>
-                    <button class="faq btn-reset"aria-label="faq">
+                    <button class="faq btn-reset transition"aria-label="faq">
                         faq
                     </button>
-                    <button class="contact btn-reset"aria-label="contact">
+                    <button class="contact btn-reset transition"aria-label="contact">
                         contact
                     </button>
                 </div>
@@ -53,15 +54,36 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <img src="#" alt="" class="back-img right-back-image">
-                    <img src="#" alt="" class="back-img left-back-image">
-                    <h1 class="hero-title">
-                        anna stone & jud.
-                    </h1>
-                    <p class="hero-descr">
-                        Introducing the Capsule Collection
-                    </p>
-                    <a href="">shop now</a>
+                    <div class="hero-back-imgs">
+                        <div class="back-img-left">
+                            <img src="assets/image/back-img-left.jpg" 
+                            class ="img-left"
+                            alt="">
+                        </div>
+                        <div class="back-img-right">
+                            <img src="assets/image/back-img-right.jpg" 
+                            class="img-right"
+                            alt="">
+                        </div>
+                    </div>
+                    <div class="hero-text-button absolute">
+                        <div class="hero-text-button-flex">
+                            <div class="hero-title">
+                                <h1 class="hero-title-text">
+                                    anna stone&ensp;&
+                                </h1>
+                                <h1 class="hero-title-text-weight">
+                                    &ensp;jud.
+                                </h1>
+                            </div>
+                            <p class="hero-descr">
+                                Introducing the Capsule Collection
+                            </p>
+                            <a href="#" class="shop-button button-base transition">
+                                shop now
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
