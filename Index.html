@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+    <title>MainPage</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,30 +15,31 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/index.js"></script>
-    <title>MainPage</title>
 </head>
 
 <body>
     <header class="header">
         <div class="container">
             <div class="header-main">
-                <div class="header-menu">
-                    <button class="shop btn-reset transition" aria-label="shop">
+                <nav class="header-menu" id="header-menu">
+                    <a href="#shop" class="shop btn-reset transition" aria-label="shop">
                         shop
-                    </button>
-                    <button class="about btn-reset transition" aria-label="about">
+                    </a>
+                    <a href="#about" class="about btn-reset transition" aria-label="about">
                         about
-                    </button>
-                    <button class="faq btn-reset transition" aria-label="faq">
+                    </a>
+                    <a href="#" class="faq btn-reset transition" aria-label="faq">
                         faq
-                    </button>
-                    <button class="contact btn-reset transition" aria-label="contact">
+                    </a>
+                    <a class="contact btn-reset transition" aria-label="contact">
                         contact
-                    </button>
-                </div>
-                <a href="" class="logo">
-                    <img src="#" alt="Logo">
-                </a>
+                    </a>
+                </nav>
+                <nav class="header-logo" id="header-logo">
+                    <a href="#hero" class="logo">
+                        <img src="#" alt="Logo">
+                    </a>
+                </nav>
                 <div class="header-icons">
                     <button class="login btn-reset header-icon login">
                         Log In
@@ -53,7 +55,7 @@
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-back-imgs">
@@ -77,15 +79,17 @@
                             <p class="hero-descr">
                                 Introducing the Capsule Collection
                             </p>
-                            <a href="#" class="shop-button button-base transition">
-                                shop now
-                            </a>
+                            <nav class="shop-button" id=shop-button>
+                                <a href="#shop" class="shop-button button-base transition">
+                                    shop now
+                                </a>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="shop">
+        <section class="shop" id="shop">
             <div class="container">
                 <h2 class="shop-title">
                     Explore the Collection
@@ -170,7 +174,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="about-container">
                     <h2 class="about-title">
@@ -210,8 +214,7 @@
                     </h6>
                     <form class="feedback-user-email">
                         <div class="user-email-container">
-                            <input class="user-email" type="email" , 
-                            placeholder="Enter your email here">
+                            <input class="user-email" type="email" , placeholder="Enter your email here">
                             <div class="box-under-input">
                             </div>
                         </div>
@@ -225,26 +228,22 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer-menu">
-                <button class="footer-button btn-reset">
+            <nav class="footer-menu">
+                <a href="#shop" class="footer-menu__button">
                     shop
-                </button>
-                <button class="footer-button btn-reset">
+                </a>
+                <a href="#about" class="footer-menu__button">
                     about
-                </button>
-                <button class="footer-button btn-reset">
-                    contact
-                </button><button class="footer-button btn-reset">
-                    faq
-                </button>
-                <button class="footer-button btn-reset">
+                </a>
+                <a href="" class="footer-menu__button">
                     shipping & return
-                </button><button class="footer-button btn-reset">
-                    store policy
-                </button>
-            </div>
+                </a>
+                <a href="" class="footer-menu__button">
+                    faq
+                </a>
+            </nav>
         </div>
     </footer>
-</body>
-
-</html>
+    </body>
+    
+    </html>
