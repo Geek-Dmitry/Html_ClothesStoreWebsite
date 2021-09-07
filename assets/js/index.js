@@ -77,6 +77,7 @@ $(document).ready(function () {
             return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
         }
     }
-    
+
     animOnScroll();
+    
 });

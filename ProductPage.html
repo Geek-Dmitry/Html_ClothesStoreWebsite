@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductPage</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+    <link rel="stylesheet" href="assets/css/productPage.css">
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/productPage.js"></script>
+</head>
+<body>
+    <div class="product-card">
+        <div class="product-card__body body">
+            <div class="product-card__image-text _block">
+                <div class="product-card__image">
+                    <img class="image" src="assets/image/shop-item-img.jpg" alt="product-card__image">
+                </div>
+                <div class="product-card__text">
+                    I'm a product description. I'm a great place to add more details about your product such as sizing,
+                    material, care instructions and cleaning instructions.
+                </div>
+            </div>
+            <div class="product-card__description _block">
+                <div class="product-card__title">I'm a product</div>
+                <div class="product-card__price">$170.00</div>
+                <div class="size">
+                    <div class="size__title _box-title">Size</div>
+                    <div class="size__list">
+                        <select class="size__select _size-box _box-text _select" name="Select">
+                            <option selected disabled hidden class="size__option">Select</option>
+                            <option class="size__option">Small</option>
+                            <option class="size__option">Medium</option>
+                            <option class="size__option">Large</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="quantity">
+                    <div class="quantity__title _box-title">Quantity</div>
+                    <div class="quantity__list">
+                        <input class="_quantity-box _box-text _select" type="number" step="1" min="1" max="999" value="1">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="buttons__block">
+                        <div class="buttons__add">
+                            <a class="_button-product _buttons _text" href="">Add to Cart</a>
+                        </div>
+                        <div class="buttons__favorites _button-product _buttons">
+                            <a class="_favorite" href=""></a>
+                        </div>
+                    </div>
+                    <div class="buttons__buy">
+                        <a class="button-base _text _buttons" href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="spoiler one">
+                    <div class="spoiler__item">
+                        <div class="spoiler__title">Product info</div>
+                        <div class="spoiler__description">
+                            I'm a product detail. I'm a great place to add more information about your product such as sizing,
+                            material, care and cleaning instructions. This is also a great space to write what makes
+                            this product special and how your customers can benefit from this item.
+                        </div>
+                    </div>
+                    <div class="spoiler__item">
+                        <div class="spoiler__title">Return & refund policy</div>
+                        <div class="spoiler__description">
+                            I’m a Return and Refund policy. I’m a great place to let your customers know
+                            what to do in case they are dissatisfied with their purchase. 
+                            Having a straightforward refund or exchange policy is a great way to build trust
+                            and reassure your customers that they can buy with confidence.
+                        </div>
+                    </div>
+                    <div class="spoiler__item">
+                        <div class="spoiler__title">Shipping info</div>
+                        <div class="spoiler__description">
+                            I'm a shipping policy. I'm a great place to add more information about your shipping
+                            methods, packaging and cost. Providing straightforward information about your shipping
+                            policy is a great way to build trust and reassure your customers that they can buy from
+                            you with confidence.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
